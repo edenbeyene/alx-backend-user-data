@@ -19,4 +19,4 @@ def is_valid(hashed_password: bytes, password: str) -> bool:
     encoded = password.encode()
     if bcrypt.checkpw(encoded, hashed_password):
         valid = True
-    return 
+    return valid
